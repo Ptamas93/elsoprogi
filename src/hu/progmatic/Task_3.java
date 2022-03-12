@@ -12,7 +12,7 @@ public class Task_3 {
         boolean primszamE = true;
 
         if ( 2 > szam  ) {
-            System.out.println(false);
+            primszamE = false;
         } else {
             for (int i = 2; i < szam; i++) {
                 if (szam % i == 0) {
@@ -21,7 +21,7 @@ public class Task_3 {
                 }
 
             }
-            System.out.println(primszamE);
         }
+        System.out.println("Prímszám? " + (primszamE ? "Igen" : "Nem"));
     }
 }
